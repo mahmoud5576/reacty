@@ -1,0 +1,209 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "item1 item12 item2 item2"
+      "item1 item12 item2 item2"
+      "item3 item4 item5 item6"
+      "item3 item4 item5 item6"
+      "item7 item8 item8 item6"
+      "item7 item8 item8 item6"
+      "item9 item10 item11 item11";
+  }
+  div.container div{
+    /* background-color: lightgreen; */
+    
+  }
+
+  .item1 { grid-area: item1;
+
+/* display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; */
+text-align: center;
+padding-top: 30%;
+}
+
+  .item12 { grid-area: item12; 
+
+    padding-top: 30%;
+}
+
+  .item12 img{
+
+
+    width: 70%;
+   
+  }
+  /* ------------------------ */
+  .item2 { 
+    grid-area: item2;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#f7f8f9;
+
+
+ }
+ .item2 h2{
+    font-size: 48px;
+    margin: 20px;
+ }
+  
+  /* ------------------------------------ */
+  .item3 { grid-area: item3; 
+display: flex;
+flex-direction: column;
+background-color: #f05638;
+justify-content: center;
+align-items: center;
+}
+.item3 img{
+    width: 100%;
+}
+/* ----------------------------- */
+  
+  .item4 { grid-area: item4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+
+
+ }
+ .item4 img{
+
+    align-items: end;
+    width: 50%;
+    object-fit: contain;
+    padding-top: 150px;
+ }
+ /* ---------------------------------------- */
+  
+  .item5 { grid-area: item5; 
+
+    text-align: center;
+    margin-top: 50%;
+}
+  /* ------------------------------------------------- */
+  .item6 { grid-area: item6; 
+
+background:#8f76bc;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+.item6 div img{
+    width: 50%;
+}
+div.item6 div.content-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.item6 button{
+    border-radius: 50px;
+     align-self: center;
+    padding: 20px;
+}
+
+
+/* ----------------------------------------------------------- */
+  
+  .item7 { grid-area: item7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+
+
+}
+
+  div.item7 img{
+    width: 50%;
+  }
+
+  /* ------------------------------------------------------ */
+  
+  .item8 { grid-area: item8; 
+background:#93b6b7;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: end;
+}
+
+
+
+div.item8 img{
+    width: 70%;
+    padding-top: 40px;
+}
+div.item8 h6{
+    align-self: self-start;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+  /* ---------------------------------- */
+  
+  .item9 { grid-area: item9; 
+  
+    background: #38d5f4;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+  }
+  .item9 img{
+    width: 20%;
+  }
+  
+  /* ------------------------------------------------------ */
+  .item10 { grid-area: item10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .item10 h3{
+    color: #000;
+    background: #7bc424;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 8px;
+   }
+  
+
+   /* ----------------------------------------- */
+  .item11 { grid-area: item11; 
+  display: flex;
+  row-gap: 30px;
+
+  }
+
+.item11 img{
+  width: 100px;
+}
+
+
+  
